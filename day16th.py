@@ -53,11 +53,49 @@
 # }
 
 # df = pd.DataFrame(data)
+# # print(df)
+
+# #Operation on Column
+# # print(df[df["Department"] == "IT"])
+
+# # df.loc[df["Name"] == "Amit", "Salary"] = 55000
+# # print(df)
+
+# df.loc[df["Department"] == "HR", "Salary"] *= 1.10
 # print(df)
 
-#Operation on Column
-# print(df.)
+# df = df[df["Emp_ID"] != 105]
+# print(df)
 
 
 
+# Operation on student-data.json file
+import pandas as pd
+url = "https://raw.githubusercontent.com/suraj-tiwary18/Data-Science-Journey/refs/heads/main/student-data.json"
+df = pd.read_json(url)
+# print(df)
 
+# All male values
+# male = df.loc[df["gender"] == "Male"]
+# print(male)
+
+# Print Raja and Dinesh 
+# print(df.iloc[3:9:5])
+
+# Filter 1
+# print(df[df["english"] == 95])
+
+# Filter 2
+# print(df[df["maths"] < 60])
+
+# physics values less than and equal to 56
+# print(df[df["physics"] <= 56])
+
+# print(df[(df["gender"] == "Male") & (df["maths"] > 80)])
+# print(df[(df["gender"] == "Female") | (df["maths"] > 80)])
+
+# print values maths > 90 and english > 90
+# print(df[(df["maths"] >= 90) & (df["english"] >= 90)] ["name"])
+
+# print values maths > 90 and english > 90 and they are male only print name
+# print(df[(df["maths"] > 90) & (df["english"] > 90) & (df["gender"] == "Male")] ["name"])
