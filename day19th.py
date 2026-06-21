@@ -1,5 +1,3 @@
-# What is matplotlib?
-# Mat
 
 # # Create First Chart
 # import matplotlib.pyplot as plt # visualization
@@ -94,7 +92,7 @@
 # # |'w'       | | | |white|
 # # graph size
 # plt.figure(figsize=(6,2)) # width or height
-# plt.plot(x,y,color="y",marker='',linestyle=":",linewidth=4,markersize=14,)
+# plt.plot(x,y,color="y",marker='*',linestyle=":",linewidth=4,markersize=14)
 # plt.show()
 
 
@@ -138,7 +136,6 @@
 # plt.ylabel("Revenue")
 # plt.title("Revenue Growth of Top Tech Companies (2020-2025)")
 
-
 # plt.legend()
 # plt.show()
 
@@ -164,7 +161,7 @@
 # y2 = [20, 30, 25, 30]
 # # calculation -> width
 # w = 0.40
-# plt.bar(x - w/2,y1, label='boys', width=w) #hide second
+# plt.bar(x - w/2,y1, label='boys', width=w) #hide second #/2 iss liye lgaya kyu ki do bar bana rhe hn toh hmne ye 
 # plt.bar(x + w/2,y2, label="girl",width=w) # show 
 
 # plt.xlabel("groups")

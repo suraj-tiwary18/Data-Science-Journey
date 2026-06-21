@@ -48,7 +48,7 @@
 # plt.show()
 
 
-# # Subplots
+# # Subplot
 # import matplotlib.pyplot as plt 
 
 # #first chart
