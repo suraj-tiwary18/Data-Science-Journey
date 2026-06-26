@@ -6,10 +6,13 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from dotenv import load_dotenv
+import os
 
 #pymysql connector
 import pymysql
-conn = pymysql.connect(host="localhost",user="root",database="day28th_db",password="2005")
+load_dotenv()
+conn = pymysql.connect(host=os.getenv("DB_HOST"),user= os.getenv("DB_USER"),database=os.getenv("DB_NAME"),password=os.getenv("DB_PASSWORD"))
 print(conn)
 query = "select avg_income,house_age,num_rooms,price, name from houses"
 df = pd.read_sql(query, conn)
@@ -67,4 +70,4 @@ print(f"Predicted value is : ₹{predict_data[0]:,.2f}")
 
 # Model Dump
 import joblib
-joblib.dump(model, "house_model.joblib")
+# joblib.dump(model, "house_model.joblib")
