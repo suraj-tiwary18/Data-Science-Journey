@@ -1,5 +1,0 @@
-# Rest API
-# Postman
-# curd operaion in mysqul
-
-# primery ket foregian key
