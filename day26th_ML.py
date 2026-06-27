@@ -80,5 +80,5 @@ print(df)
 
 # one hot encoder
 oe = OneHotEncoder()
-oe_e = oe.fit_transform(df[['gender']]).toarray()
+oe_e = oe.fit_transform(df[['gender']]).toarray() # 2d
 print(oe_e)

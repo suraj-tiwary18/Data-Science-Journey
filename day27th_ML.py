@@ -75,7 +75,7 @@ df = pd.read_csv(url)
 print(df)
 
 # Split Data
-X = df[['experience']]
+X = df[['experience']] #output always in 2D 
 Y = df['salary']
 
 # Train Test split
@@ -91,7 +91,7 @@ from sklearn.linear_model import LinearRegression
 
 # model fit
 model = LinearRegression()
-model.fit(x_train, y_train) # 2d
+model.fit(x_train, y_train) 
 
 # input form user
 user = int(input("Enter your experience : "))
@@ -104,3 +104,5 @@ df1 = pd.DataFrame(new_data)
 print(df1)
 pred_data = model.predict(df1)
 print(pred_data[0])
+
+
