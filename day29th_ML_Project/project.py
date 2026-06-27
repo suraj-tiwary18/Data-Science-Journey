@@ -7,7 +7,7 @@ import joblib
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-url = "https://raw.githubusercontent.com/suraj-tiwary18/Data-Science-Journey/refs/heads/main/moviesTMBD.csv"
+url = "https://raw.githubusercontent.com/suraj-tiwary18/Data-Science-Journey/refs/heads/main/day29th_ML_Project/moviesTMBD.csv"
 df = pd.read_csv(url)
 
 # handle missing values
